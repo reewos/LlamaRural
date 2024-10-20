@@ -1,0 +1,217 @@
+[
+    {
+        "distancia": 4.86,
+        "centro_poblado": "FRAY RAMON",
+        "operador": "Viettel Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.94115,
+        "lon": -76.40176,
+        "tecnologias": [
+            "3G",
+            "4G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 3.45,
+        "centro_poblado": "SANTA ROSA",
+        "operador": "Viettel Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97036,
+        "lon": -76.4191,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.93,
+        "centro_poblado": "EL TIGRE",
+        "operador": "Viettel Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97553,
+        "lon": -76.40655,
+        "tecnologias": [
+            "3G",
+            "4G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.39,
+        "centro_poblado": "EL 25",
+        "operador": "Viettel Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97452,
+        "lon": -76.41166,
+        "tecnologias": [
+            "3G",
+            "4G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.89,
+        "centro_poblado": "SANTA LUISA",
+        "operador": "Viettel Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.98366,
+        "lon": -76.41363,
+        "tecnologias": [
+            "3G",
+            "4G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.83,
+        "centro_poblado": "ANGOLA",
+        "operador": "Viettel Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.99153023,
+        "lon": -76.42598779,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.31,
+        "centro_poblado": "SANTA ROSA",
+        "operador": "Telef\u00f3nica del Per\u00fa S.A.A.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97036,
+        "lon": -76.41,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.93,
+        "centro_poblado": "EL TIGRE",
+        "operador": "Telef\u00f3nica del Per\u00fa S.A.A.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97553,
+        "lon": -76.40655,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.55,
+        "centro_poblado": "EL 25",
+        "operador": "Telef\u00f3nica del Per\u00fa S.A.A.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97452,
+        "lon": -76.41,
+        "tecnologias": [
+            "4G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.83,
+        "centro_poblado": "ANGOLA",
+        "operador": "Telef\u00f3nica del Per\u00fa S.A.A.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.99153023,
+        "lon": -76.42598779,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 3.45,
+        "centro_poblado": "SANTA ROSA",
+        "operador": "Am\u00e9rica M\u00f3vil Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97036,
+        "lon": -76.4191,
+        "tecnologias": [
+            "3G",
+            "4G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.93,
+        "centro_poblado": "EL TIGRE",
+        "operador": "Am\u00e9rica M\u00f3vil Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97553,
+        "lon": -76.40655,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.39,
+        "centro_poblado": "EL 25",
+        "operador": "Am\u00e9rica M\u00f3vil Per\u00fa S.A.C.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97452,
+        "lon": -76.41166,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.86,
+        "centro_poblado": "FRAY RAMON",
+        "operador": "Entel Per\u00fa S.A.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.94115,
+        "lon": -76.40176,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    },
+    {
+        "distancia": 4.39,
+        "centro_poblado": "EL 25",
+        "operador": "Entel Per\u00fa S.A.",
+        "departamento": "LIMA",
+        "provincia": "CA\u00d1ETE",
+        "distrito": "QUILMANA",
+        "lat": -12.97452,
+        "lon": -76.41166,
+        "tecnologias": [
+            "3G"
+        ],
+        "velocidad": "Hasta 1Mbps"
+    }
+]

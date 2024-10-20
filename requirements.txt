@@ -5,3 +5,5 @@ folium
 streamlit-folium
 haversine
 plotly
+llama-index
+python-dotenv

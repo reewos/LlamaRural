@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import folium
+import json
 from streamlit_folium import folium_static
 import numpy as np
 import plotly.express as px
@@ -8,11 +9,15 @@ from folium.plugins import HeatMap, MarkerCluster, Search
 from branca.colormap import LinearColormap
 
 # Configuración de la página
+
 st.set_page_config(
     page_title="LlamaRural - Análisis de Cobertura",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+if 'nearby_stations' not in st.session_state:
+    st.session_state.nearby_stations = None
 
 # Estilo personalizado
 st.markdown("""
@@ -68,7 +73,7 @@ def find_nearby_stations(df, lat, lon, radius_km=5, operador_filter=None):
             techs = [tech for tech, val in 
                     zip(['2G', '3G', '4G', '5G'], 
                         [row['2G'], row['3G'], row['4G'], row['5G']]) 
-                    if val == 'SI']
+                    if val == 1]
             
             nearby.append({
                 'distancia': round(row['distance'], 2),
@@ -163,7 +168,7 @@ def create_statistics_plots(df, nearby_stations):
                 tech_data.append({'Tecnología': tech, 'Cantidad': 1})
         tech_df = pd.DataFrame(tech_data)
         tech_count = tech_df.groupby('Tecnología').sum().reset_index()
-        
+
         fig_tech = px.bar(tech_count, 
                          x='Tecnología', 
                          y='Cantidad',
@@ -212,13 +217,18 @@ def main():
         # Inputs en dos columnas
         loc_col1, loc_col2 = st.columns(2)
         with loc_col1:
-            lat = st.number_input("Latitud", value=-12.9450053)
+            lat = st.number_input("Latitud", value=-12.95197897275646)
         with loc_col2:
-            lon = st.number_input("Longitud", value=-76.4200831)
+            lon = st.number_input("Longitud", value=-76.44419446222732)
         
         if st.button("Analizar Cobertura", type="primary"):
             # Buscar estaciones cercanas
             nearby = find_nearby_stations(df, lat, lon, radius, operador_filter)
+            print(nearby)
+            if len(nearby) != 0:
+                with open('resources/nearby.json', 'w') as file:
+                    json.dump(nearby, file, indent=4)
+                    print("JSON saved successfully.")
             
             if nearby:
                 st.success(f"Se encontraron {len(nearby)} estaciones cercanas")
@@ -244,13 +254,23 @@ def main():
         
         # Métricas en tarjetas
         col_met1, col_met2 = st.columns(2)
+        tecnologias = {
+            '2G': df['2G'].sum(),
+            '3G': df['3G'].sum(),
+            '4G': df['4G'].sum(),
+            '5G': df['5G'].sum()
+        }
         with col_met1:
             st.metric("Total Estaciones", len(df))
+            st.metric(f"Estaciones {str('2G')}", tecnologias['2G'])
+            st.metric(f"Estaciones {str('4G')}", tecnologias['4G'])
             # st.metric("Cobertura 4G", 
             #          f"{(df['4G'] == 'SI').sum()}/{len(df)}")
         with col_met2:
             st.metric("Total Operadores", 
                      df['EMPRESA_OPERADORA'].nunique())
+            st.metric(f"Estaciones {str('3G')}", tecnologias['3G'])
+            st.metric(f"Estaciones {str('5G')}", tecnologias['5G'])
             # st.metric("Cobertura 5G", 
             #          f"{(df['5G'] == 'SI').sum()}/{len(df)}")
         
