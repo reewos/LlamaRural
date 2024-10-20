@@ -6,4 +6,5 @@ streamlit-folium
 haversine
 plotly
 llama-index
+llama-index-llms-openllm
 python-dotenv

@@ -3,7 +3,7 @@ import io
 import json
 import streamlit as st 
 import pandas as pd
-from llama_index.llms.openai import OpenAI
+from llama_index.llms.openllm import OpenLLM
 from llama_index.core.llms import ChatMessage
 
 from dotenv import load_dotenv
@@ -20,8 +20,8 @@ if "chat_messages" not in st.session_state:
     st.session_state.chat_messages = [{"role":'system', "content":'You are a helpfull assistant'}]
 
 # Model configuration
-llama_32_3B = OpenAI(model="meta-llama/Llama-3.2-3B-Instruct-Turbo", api_key=os.environ['AIML_API_KEY'], api_base="https://api.aimlapi.com")
-llama_31_405 = OpenAI(model="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo", api_key=os.environ['AIML_API_KEY'], api_base="https://api.aimlapi.com")
+llama_32_3B = OpenLLM(model="meta-llama/Llama-3.2-3B-Instruct-Turbo", api_key=os.environ['AIML_API_KEY'], api_base="https://api.aimlapi.com")
+llama_31_405 = OpenLLM(model="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo", api_key=os.environ['AIML_API_KEY'], api_base="https://api.aimlapi.com")
 
 def analyze_chat_history(messages):
     # Basic analysis to determine which model to use
