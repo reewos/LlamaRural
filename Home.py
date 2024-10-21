@@ -192,7 +192,7 @@ def create_statistics_plots(df, nearby_stations):
 
 def main():
     st.title("🌟 LlamaRural")
-    st.subheader("Coverage Analysis in Rural Areas")
+    st.subheader("Coverage Analysis in Peru")
     
     # Load data
     df = load_data()

@@ -6,7 +6,6 @@ from streamlit_folium import folium_static
 import numpy as np
 import plotly.express as px
 from folium.plugins import HeatMap, MarkerCluster, Search
-from branca.colormap import LinearColormap
 
 # Page configuration
 
@@ -192,7 +191,7 @@ def create_statistics_plots(df, nearby_stations):
 
 def main():
     st.title("🌟 LlamaRural")
-    st.subheader("Coverage Analysis in Rural Areas")
+    st.subheader("Coverage Analysis in Peru")
     
     # Load data
     df = load_data()
