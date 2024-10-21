@@ -79,6 +79,10 @@ To run LlamaRural locally, follow these steps:
 - Implement the Llama 3.2 3B model for offline basic functions.
 - Add a no-coverage alert system to report connectivity issues to regulatory authorities.
 
+## Resources
+
+- [Mobile Service Coverage by Operator Company](https://www.datosabiertos.gob.pe/dataset/cobertura-de-servicio-m%C3%B3vil-por-empresa-operadora)
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any changes or improvements.
